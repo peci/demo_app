@@ -11,3 +11,6 @@ group :test do
   gem 'rspec', '2.5.0'
   gem 'webrat', '0.7.1'
 end
+
+gem 'autotest', '4.4.6'
+gem 'autotest-rails-pure', '4.1.2'
