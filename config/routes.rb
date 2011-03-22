@@ -9,6 +9,14 @@ DemoApp::Application.routes.draw do
 
   resources :users
 
+  root :to => 'pages#home'
+#  root_path => '/'
+#  root_url  => 'http://localhost:3000/'
+  match '/', :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
